@@ -1,0 +1,124 @@
+/* ==============================
+   SECCIÓN RESERVA
+================================= */
+
+#contacto {
+    padding: 60px 20px;
+    background-color: #fff5f5;
+    min-height: 100vh;
+}
+
+/* Título */
+#contacto font {
+    font-family: Arial, sans-serif;
+    color: #FF7070;
+}
+
+#contacto b {
+    font-size: 45px;
+}
+
+/* Tabla / formulario */
+#contacto table {
+    width: 50%;
+    max-width: 650px;
+    min-width: 350px;
+    margin: 30px auto;
+    background-color: #FF7070;
+    border-radius: 20px;
+    border-collapse: separate;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
+}
+
+/* Contenido interno */
+#contacto td {
+    padding: 35px;
+}
+
+/* Etiquetas */
+#contacto form font {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Campos de texto */
+#contacto input[type="text"],
+#contacto textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Efecto al seleccionar un campo */
+#contacto input[type="text"]:focus,
+#contacto textarea:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+    transform: scale(1.01);
+}
+
+/* Área de mensaje */
+#contacto textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Botón */
+#contacto input[type="submit"] {
+    display: block;
+    margin: 25px auto 0;
+    padding: 13px 30px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: #FF7070;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efecto del botón */
+#contacto input[type="submit"]:hover {
+    background-color: #ffdddd;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ==============================
+   DISEÑO PARA CELULAR
+================================= */
+
+@media (max-width: 768px) {
+
+    #contacto {
+        padding: 40px 10px;
+    }
+
+    #contacto b {
+        font-size: 35px;
+    }
+
+    #contacto table {
+        width: 95%;
+        min-width: 0;
+    }
+
+    #contacto td {
+        padding: 25px;
+    }
+
+    #contacto input[type="text"],
+    #contacto textarea {
+        width: 100%;
+    }
+}
+
